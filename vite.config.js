@@ -10,7 +10,8 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-    base: '/poc-test-firebase-connection/',
+  base: '/poc-test-firebase-connection/',
+  resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
